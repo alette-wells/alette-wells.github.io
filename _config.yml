@@ -29,13 +29,46 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-# Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.27.1"
+# Theme settings
+remote_theme: "mmistakes/minimal-mistakes@4.27.1"         #Installing the remote theme required the jekyll-include-cache plugin
+minimal_mistakes_skin: "dark"
+
+# Site Settings:
+locale: "en-US"
+title: "Alette Wells Math Site"
+title_separator: "-"
+name: "Alette Wells"
+description: "A collection of my research experience and interests, and blog posts."
+url: "https://alette-wells.github.io"   # If you have trouble pushing the next commit, check this, and see if you need a base url -- MUST CHANGE IF HAVE DOMAIN NAME
+logo: "/assets/images/mathsite_logo.png"
+masthead_title: "Alette Wells"
+enable_copy_code_button: true
+
+atom_feed:
+  hide: true
+
+search: true
+lunr: 
+  search_within_pages: true
+
+author:
+  name: "Alette Wells"
+  avatar: "/assets/images/Wells_Alette_2.png"
+  bio: "Incoming PhD student at UChicago."
+  links:
+    - label: "alettew [at] uchicago [dot] edu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/alette-wells"
+
+
 plugins:
   - jekyll-feed
   - jekyll-include-cache
 # Let Jekyll see the pages in the _pages folder: 
-include: ["_pages"]
+include: 
+- _pages                 # formerly written as ["_pages"]
+
 # Defaults added for the minimal mistakes theme:
 defaults:
   # _posts
@@ -45,10 +78,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
+      read_time: false
+      comments: false   
       share: true
       related: true
+      show_date: true
   # _pages (folder yet to be set, does this mean the type parameter set below is meaningless?)
   - scope: 
       path: ""
