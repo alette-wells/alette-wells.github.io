@@ -1,3 +1,7 @@
 main:
   - title: "About me"
     url: /about/
+  - title: "Math Blog"
+    url: /year-archive/
+  - title: "Research"
+    url: /portfolio/

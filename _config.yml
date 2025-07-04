@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+## Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -68,6 +68,21 @@ plugins:
 # Let Jekyll see the pages in the _pages folder: 
 include: 
 - _pages                 # formerly written as ["_pages"]
+- _data                  # The config file seemed to be reading/accessing these directories perfectly fine, but I include them just in case. 
+- assets
+- _portfolio           # Should we include this folder? Do we even need it to create the portfolio collection
+# First I will try it with not including _layouts since this is already a folder in the gem and I don't want confusion.
+
+# Configure the portfolio collection
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+
+
+
+
 
 # Defaults added for the minimal mistakes theme:
 defaults:
@@ -83,14 +98,21 @@ defaults:
       share: true
       related: true
       show_date: true
-  # _pages (folder yet to be set, does this mean the type parameter set below is meaningless?)
+  # _pages 
   - scope: 
       path: ""
       type: pages
     values: 
       layout: single
       author_profile: true
-
+  # _portfolio
+  - scope: 
+      path: ""
+      type: portfolio
+    values:
+      layout: single 
+      author_profile: false
+      share: true
 
 
 
