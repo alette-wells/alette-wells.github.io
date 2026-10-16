@@ -3,11 +3,11 @@ main:
   #  url: /about/            # there used to be a file about.md in _pages
   #- title: "Math Blog"        Put this back in (also under _sites/_data) when you have a post to make. This should be all you have to do to get the math blog up and running again. 
   #  url: /year-archive/
-  - title: "CV"
-    url: /assets/documents/Graduate Resume AW.pdf
-  - title: "Notes"
-    url: /notes-portfolio/
-  - title: "Research"
-    url: /research-portfolio/
-  - title: "Travel"
-    url: /travel/
+  #- title: "CV"
+  #  url: /assets/documents/Graduate Resume AW.pdf
+  #- title: "Notes"
+  #  url: /notes-portfolio/
+  #- title: "Research"
+  #  url: /research-portfolio/
+  #- title: "Travel"
+  #  url: /travel/
